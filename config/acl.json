@@ -1,0 +1,9 @@
+{
+	"anonymous": [
+		"/",
+		"page_not_found"
+	],
+	"logged": [
+		"/about/{id}"
+	]
+}

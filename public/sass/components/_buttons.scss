@@ -1,0 +1,24 @@
+.button {
+	padding: .75rem 1.25rem;
+	font: inherit;
+	font-weight: 500;
+	letter-spacing: 1px;
+	color: $color-black;
+	border-radius: 0;
+	border: none;
+	cursor: pointer;
+
+	&--block {
+		width: 100%;
+	}
+
+	&--primary {
+		background-color: $color-primary;
+		color: $color-white;
+	}
+
+	&--danger {
+		background-color: $color-danger;
+		color: $color-white;
+	}
+}

@@ -1,0 +1,66 @@
+{
+	"/": {
+		"GET": {
+			"response": "\\App\\Controllers\\HomeController::index",
+			"name": "home"
+		}
+	},
+	"/about/{id}": {
+		"GET": {
+			"response": "about::\\App\\Controllers\\AboutController::index",
+			"name": "about"
+		}
+	},
+	"/register": {
+		"GET": {
+			"response": "\\App\\Controllers\\Auth\\RegistrationController::renderPage",
+			"name": "registration_page"
+		},
+		"POST": {
+			"response": "\\App\\Controllers\\Auth\\RegistrationController::register",
+			"name": "registration_process"
+		}
+	},
+	"/login": {
+		"GET": {
+			"response": "\\App\\Controllers\\Auth\\LoginController::renderPage",
+			"name": "login_page"
+		},
+		"POST": {
+			"response": "\\App\\Controllers\\Auth\\LoginController::login",
+			"name": "login_process"
+		}
+	},
+	"/logout": {
+		"GET": {
+			"response": "\\App\\Controllers\\Auth\\LoginController::logout",
+			"name": "logout"
+		}
+	},
+	"/reset-password": {
+		"GET": {
+			"response": "\\App\\Controllers\\Auth\\ResetPasswordController::renderPage",
+			"name": "reset_password_page"
+		},
+		"POST": {
+			"response": "\\App\\Controllers\\Auth\\ResetPasswordController::resetPassword",
+			"name": "reset_password_process"
+		}
+	},
+	"/delete-account": {
+		"GET": {
+			"response": "\\App\\Controllers\\Auth\\DeleteAccountController::renderPage",
+			"name": "account_delete_page"
+		},
+		"POST": {
+			"response": "\\App\\Controllers\\Auth\\DeleteAccountController::delete",
+			"name": "account_delete_page"
+		}
+	},
+	"/page_not_found": {
+		"GET": {
+			"response": "\\App\\Controllers\\PageNotFoundController::method",
+			"name": "page_not_found"
+		}
+	}
+}

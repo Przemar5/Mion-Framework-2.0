@@ -1,0 +1,9 @@
+.card {
+	padding: 1rem 2rem;
+	box-shadow: $box-shadow-md;
+	margin: auto;
+
+	&--sm {
+		max-width: 42rem;
+	}
+}
